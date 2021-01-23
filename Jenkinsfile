@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Performance') {
             steps {
-                sh 'mvn verify -Pperformance'
+                sh './mvnw.cmd verify -Pperformance'
             }
         }
     }
